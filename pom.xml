@@ -10,7 +10,10 @@
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
-<!-- DEFINICAO DE PROJETO PAI -->
+<!--
+ Idendificador Mavem para projeto principal
+ DEFINICAO DE PROJETO PAI
+ -->
 	<packaging>pom</packaging>
 
   <properties>
@@ -74,10 +77,12 @@
       </plugins>
     </pluginManagement>
   </build>
-   <!-- Modulos microservicos
+   <!-- 
+     Modulos microservicos
     <module>gerenciadorpadaria</module>
     <module>gerenciadorcaixa</module>
    -->
+   
    <!-- inclusao do modulo acougue -->
  <modules>  
 	<module>gerenciadorproduto</module>
