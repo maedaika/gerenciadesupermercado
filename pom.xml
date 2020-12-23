@@ -78,9 +78,10 @@
     <module>gerenciadorpadaria</module>
     <module>gerenciadorcaixa</module>
    -->
-   <modules>  
+ <modules>  
 	<module>gerenciadorproduto</module>
      <module>padaria</module>
     <module>caixa</module>
-  </modules>
+    <module>acougue</module>
+ </modules>
 </project>
