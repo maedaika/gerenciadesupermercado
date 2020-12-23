@@ -78,6 +78,7 @@
     <module>gerenciadorpadaria</module>
     <module>gerenciadorcaixa</module>
    -->
+   <!-- inclusao do modulo acougue -->
  <modules>  
 	<module>gerenciadorproduto</module>
      <module>padaria</module>
