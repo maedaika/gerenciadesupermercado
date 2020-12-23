@@ -82,5 +82,6 @@
 	<module>gerenciadorproduto</module>
      <module>padaria</module>
     <module>caixa</module>
+    <module>acougue</module>
   </modules>
 </project>
