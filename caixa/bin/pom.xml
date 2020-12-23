@@ -1,17 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>gerenciadesupermercado</artifactId>
+    <groupId>br.com.gerenciadesupermercado</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
 
-  <groupId>br.com.gerenciadesupermercado</groupId>
-  <artifactId>gerenciadesupermercado</artifactId>
+  <groupId>br.com.caixa</groupId>
+  <artifactId>caixa</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>gerenciadesupermercado</name>
+  <name>caixa</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
-
-<!-- DEFINICAO DE PROJETO PAI -->
-	<packaging>pom</packaging>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,8 +31,7 @@
   </dependencies>
 
   <build>
-    <pluginManagement>
-      <!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
@@ -74,18 +75,4 @@
       </plugins>
     </pluginManagement>
   </build>
-   <!-- Modulos microservicos
-    <module>gerenciadorpadaria</module>
-    <module>gerenciadorcaixa</module>
-   -->
- <modules>  
-	<module>gerenciadorproduto</module>
-     <module>padaria</module>
-    <module>caixa</module>
-    <module>acougue</module>
-<<<<<<< HEAD
- </modules>
-=======
-  </modules>
->>>>>>> 17b85b861bffcfcf1516029e48af1f43d4334def
 </project>
