@@ -10,7 +10,9 @@
   <groupId>br.com.acougue</groupId>
   <artifactId>acougue</artifactId>
   <version>1.0-SNAPSHOT</version>
-
+  <!--o pais é pom os filhos sao .JAR  -->
+  <packaging>jar</packaging>
+  
   <name>acougue</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>

@@ -11,7 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-@Table(name="TBL_PRODUTO")
+@Table(name="tbl_produto")
 //sequencia criada automaticamente
 @SequenceGenerator(name="tbl_produto_idproduto_seq", sequenceName="tbl_produto_idproduto_seq",initialValue=1, allocationSize=1)
 @Entity
@@ -19,6 +19,11 @@ public class Produto implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	
+	/*
+	 * INSERT INTO supermecado.tbl_produto ("idTipoProduto", "dcNome", "dcMarca",
+	 * "dtDalidade", "dtFabricacao", descricao, codigo_barra, origem, valor)
+	 * VALUES(0, '', '', '', '', '', '', '', '');
+	 */
 
 //Sequence referenciando ao a chave da tabela, coluna IDPRODUTO
 	@Id	
@@ -29,7 +34,7 @@ public class Produto implements Serializable{
 	@Column(name="dcNome")
 	private String dcNome;
 
-	@Column(name="dcNome")
+	@Column(name="dcMarca")
 	private String dcMarca;
 	
 	@Column(name="dtValidade")
@@ -50,8 +55,8 @@ public class Produto implements Serializable{
 	@Column(name="valor")
 	private String valor;
 	
-	@Column(name="tblTipoProdutoIdTipoProduto")
-	private Integer tblTipoProdutoIdTipoProduto;
+	@Column(name="idTipoProduto")
+	private Integer idTipoProduto;
 	
 
 	public Integer getIdProduto() {
@@ -109,10 +114,10 @@ public class Produto implements Serializable{
 		this.valor = valor;
 	}
 	public Integer getTblTipoProdutoIdTipoProduto() {
-		return tblTipoProdutoIdTipoProduto;
+		return idTipoProduto;
 	}
 	public void setTblTipoProdutoIdTipoProduto(Integer tblTipoProdutoIdTipoProduto) {
-		this.tblTipoProdutoIdTipoProduto = tblTipoProdutoIdTipoProduto;
+		this.idTipoProduto = tblTipoProdutoIdTipoProduto;
 	}
 	
 	// TODO Auto-generated constructor stub
@@ -125,7 +130,7 @@ public class Produto implements Serializable{
 	public Produto(Integer tblTipoProdutoIdTipoProduto, Integer idProduto, String dcNome, String dcMarca,
 			Date dtValidade, Date dtFabricacao, String descricao, String codigoBarra, String origem, String valor) {
 		super();
-		this.tblTipoProdutoIdTipoProduto = tblTipoProdutoIdTipoProduto;
+		this.idTipoProduto = tblTipoProdutoIdTipoProduto;
 		this.idProduto = idProduto;
 		this.dcNome = dcNome;
 		this.dcMarca = dcMarca;
@@ -140,7 +145,7 @@ public class Produto implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Produto [tblTipoProdutoIdTipoProduto=" + tblTipoProdutoIdTipoProduto + ", idProduto=" + idProduto
+		return "Produto [tblTipoProdutoIdTipoProduto=" + idTipoProduto + ", idProduto=" + idProduto
 				+ ", dcNome=" + dcNome + ", dcMarca=" + dcMarca + ", dtValidade=" + dtValidade + ", dtFabricacao="
 				+ dtFabricacao + ", descricao=" + descricao + ", codigoBarra=" + codigoBarra + ", origem=" + origem
 				+ ", valor=" + valor + "]";

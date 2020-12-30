@@ -14,6 +14,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>gerenciadorproduto</name>
 	<description>Demo project for Spring Boot</description>
+	
+<!--o pais é pom os filhos sao .JAR  -->
+    <packaging>jar</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
