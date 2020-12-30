@@ -42,6 +42,7 @@ public class ProdutoController implements IProdutoController {
 		
 		Produto produto = new Produto();
 		Response response = new Response();
+				
 		try {
 			produto.setCodigoBarra(codigoBarra);
 			produto.setDcMarca(dcMarca);
