@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Built-By: Fabio
 Build-Jdk: 11.0.8
-Implementation-Title: gerenciadorproduto
+Implementation-Title: caixa
 Implementation-Version: 1.0-SNAPSHOT
-Implementation-Vendor-Id: br.com.gerenciadorproduto
+Implementation-Vendor-Id: br.com.caixa
 Implementation-URL: http://www.example.com
 Created-By: Maven Integration for Eclipse
 
