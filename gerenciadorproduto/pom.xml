@@ -10,6 +10,7 @@
   <groupId>br.com.gerenciadorproduto</groupId>
   <artifactId>gerenciadorproduto</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
   <name>gerenciadorproduto</name>
   <!-- FIXME change it to the project's website -->
